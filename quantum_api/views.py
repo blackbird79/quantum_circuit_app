@@ -6,6 +6,8 @@ from qiskit import QuantumCircuit
 from qiskit import Aer,execute
 from qiskit.visualization import plot_histogram
 import logging
+import plotly
+import json
 
 logger = logging.getLogger(__name__)
 
@@ -48,7 +50,7 @@ class UploadViewSet(ViewSet):
             aer_sim = Aer.get_backend('aer_simulator')
             qasm_job = execute(qc,backend=aer_sim,shots=1024).result()
             counts = qasm_job.get_counts()
-            response=counts
+            response=json.dumps(counts, cls=plotly.utils.PlotlyJSONEncoder)
         except:
             response = "Can't simulate the qasm string"
             logger.error(response)  
