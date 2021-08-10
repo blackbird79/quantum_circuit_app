@@ -1,4 +1,4 @@
-# quantum_circuit_app
+# Quantum Circuit App
 In this exercise I implement platform that facilitates execution and analysis of quantum circuits.
 1. Api which accepts a QASM file, analyze and return basic properties.
 2. Api which accepts a QASM file,simulate it with IBM simulators and return the results (meanwhile in 
