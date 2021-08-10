@@ -7,7 +7,7 @@ json and not histograms)
 the server.
 4. Log mechanism was added through logging library of django (can be extended with adding logging configuration).
 5. Added sample tests of the analyze Api (can be extended with the simulate Api and also with more edge case tests).
-Also, I used this github for manual testing (https://github.com/pnnl/QASMBench)
+Also, I used this github for manual testing (https://github.com/pnnl/QASMBench).
 6.Unfortunately I don't have time for dockerfile and authentication. I started the authentication task with 
 django authentication but didn't finish it.
 7. I chose Django for the following reasons:
